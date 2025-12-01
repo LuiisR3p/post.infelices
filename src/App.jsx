@@ -88,6 +88,27 @@ function Auth() {
         </div>
         {msg && <p className="muted">{msg}</p>}
       </Card>
+          
+
+      {/* INFO ABAJO */}
+      <Card title="INFORMACION">
+        <p className="muted">
+          ESTA PAGINA ES UN LISTADO POR PAIS. SOLO USUARIOS LOGUEADOS PUEDEN AGREGAR NOMBRES.
+        </p>
+
+        <ul className="muted" style={{ marginTop: 10, lineHeight: 1.6 }}>
+          <li>TODO SE GUARDA EN MAYUSCULAS.</li>
+          <li>SI EL NOMBRE YA EXISTE EN ESE PAIS, NO SE GUARDA.</li>
+          <li>SI EL NOMBRE ESTA RESTRINGIDO, NO SE GUARDA.</li>
+          <li>SE GUARDA EL CORREO DEL USUARIO QUE LO REGISTRA.</li>
+           <li>ESTA APP SE HIZO PORQUE EL CREADOR ESTABA ABURRIDO Y QUERIA PASAR EL TIEMPO.</li> .
+        </ul>
+
+        <p className="muted" style={{ marginTop: 12 }}>
+          SI ALGUIEN PIDE SABER QUIEN LO PUSO, SE PODRA COMPARTIR EL CORREO DEL CREADOR DEL REGISTRO.
+        </p>
+      </Card>
+
     </motion.div>
   );
 }
