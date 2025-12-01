@@ -62,7 +62,7 @@ function Auth() {
             
           </p>
           <p className="muted">Inicia sesion para ver y agregar.</p>
-          <p className="muted">Esta pagina la hizo un infiel :(</p>
+          
         </div>
       </div>
 
