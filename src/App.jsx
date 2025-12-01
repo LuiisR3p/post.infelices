@@ -336,8 +336,8 @@ async function addName() {
   const nameUp = toUpperStrict(name);
   const descUp = toUpperStrict(desc);
 
-  if (nameUp.length < 2 || nameUp.length > 60) return setMsg("NOMBRE: 2 A 60 CARACTERES.");
-  if (descUp.length > 200) return setMsg("DESCRIPCION: MAX 200 CARACTERES.");
+  if (nameUp.length < 2 || nameUp.length > 30) return setMsg("NOMBRE: 2 A 30 CARACTERES.");
+  if (descUp.length > 500) return setMsg("DESCRIPCION: MAX 500 CARACTERES.");
 
   const { error } = await supabase.from("names").insert({
     country_id: cid,
